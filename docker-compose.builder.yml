@@ -1,0 +1,15 @@
+version: '2'
+services:
+  base:
+    image: node:20
+    volumes:
+      - ./frontend:/usr/src/service
+    working_dir: /usr/src/service
+  install:
+    extends:
+      service: base
+    command: npm i
+  build:
+    extends:
+      service: install
+    command: npm run build
