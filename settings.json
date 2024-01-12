@@ -1,0 +1,7 @@
+{
+  "better-phpunit.docker.enable": true,
+  "better-phpunit.docker.command": "docker exec meta-forge-phpunit-backend-1 bash",
+  "better-phpunit.docker.paths": {
+    "/Users/rama/Personal/meta-forge-phpunit": "/var/www/html"
+  }
+}
